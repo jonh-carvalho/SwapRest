@@ -7,7 +7,7 @@ from rest_framework.permissions import IsAuthenticated
 class PerfilViewSet(viewsets.ModelViewSet):
     queryset = Perfil.objects.all()
     serializer_class = PerfilSerializer
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
 
 class FeedViewSet(viewsets.ModelViewSet):
     queryset = Feed.objects.all()
